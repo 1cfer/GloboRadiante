@@ -2,6 +2,12 @@
 
 Firmware y documentación de un dispositivo portátil basado en ESP32 para estimar la **temperatura radiante media (MRT)**. El equipo mide temperatura del aire, temperatura de globo y humedad relativa; presenta los datos en una pantalla OLED y transmite promedios a FIWARE mediante NGSIv2.
 
+<p align="center">
+  <img src="docs/prototipo-1.jpg"
+       alt="Primer prototipo del Globo Radiante"
+       width="700">
+</p>
+
 ## Documentación
 
 - [Documentación técnica en PDF](docs/GloboRadiante_Documentacion_Tecnica.pdf)
@@ -32,9 +38,15 @@ Los componentes electrónicos trabajan a **3,3 V**. Los 12 V del capacitor corre
 | OLED SDA / SCL | GPIO21 / GPIO22 |
 | HDC1080 SDA / SCL | GPIO21 / GPIO22, dirección 0x40 |
 | DS18B20 DATA | GPIO27, pull-up de 4,7 kΩ a 3,3 V |
-| Botón | GPIO0 a GND, `INPUT_PULLUP` |
+| Botón | GPIO32 a GND, `INPUT_PULLUP` |
 
 El DS18B20 se alimenta a 3,3 V con tres hilos. El HDC1080 debe ubicarse fuera del globo y alejado del calor del ESP32 y de la alimentación. No mantener GPIO0 pulsado durante encendido o reinicio.
+
+<p align="center">
+  <img src="docs/diagrama_conexiones_globo_radiante.png"
+       alt="Diagrama de conexiones del Globo Radiante"
+       width="600">
+</p>
 
 ## Cálculo de MRT
 
