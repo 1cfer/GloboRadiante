@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+build/
+.pio/
+.env
+.env.*
+secrets.h
+*.bin
+*.elf
