@@ -1028,7 +1028,7 @@ jobs:
           dmVyaWZpY2FyLnB5UEsFBgAAAAAbABsA3QYAAI9bAQAAAA==
           GLOBO_PAYLOAD
           base64 --decode /tmp/globo_payload.b64 > /tmp/globo_payload.zip
-          unzip -o /tmp/globo_payload.zip -d .
+          unzip -o /tmp/globo_payload.zip -x "README.md" ".github/workflows/*" -d .
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
