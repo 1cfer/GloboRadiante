@@ -2,13 +2,6 @@
 
 Firmware y documentación de un dispositivo portátil basado en ESP32 para estimar la **temperatura radiante media (MRT)**. El equipo mide temperatura del aire, temperatura de globo y humedad relativa; presenta los datos en una pantalla OLED y transmite promedios a FIWARE mediante NGSIv2.
 
-<p align="center">
-  <img src="docs/prototipo-1.jpg" alt="Prototipo Vista 1" width="48%" />
-  &nbsp;
-  <img src="docs/prototipo-2.jpg" alt="Prototipo Vista 2" width="48%" />
-</p>
-
-
 ## Documentación
 
 - [Documentación técnica en PDF](docs/GloboRadiante_Documentacion_Tecnica.pdf)
